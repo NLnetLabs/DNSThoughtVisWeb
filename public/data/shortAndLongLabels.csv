@@ -1,0 +1,61 @@
+,optionId,labelShort,probesLabel,label
+0,can_ipv6,can do IPv6,that,can reach IPv6 only nameservers
+1,can_tcp,can do TCP,that,can return over TCP
+2,can_tcp6,can do TCP6,that,can return over TCP (to an IPv6 only nameserver)
+3,does_ecs,do ecs,,send an EDNS Client Subnet option
+4,does_flagday,strict resolvers,with,Does not work around EDNS timeouts
+5,does_rov4,do rov4,that,are protected by IPv4 Route origin Validation
+6,does_rov6,do rov6,that,are protected by IPv6 Route origin Validation
+7,does_qnamemin,do qnamemin,that,do QNAME Minimization
+8,doesnt_qnamemin,do not do qnamemin,that,do <b>not</b> do QNAME Minimization
+9,does_nxdomain,do nxdomain,,do NXDOMAIN Rewriting
+10,doesnt_nxdomain,do not do nxdomain,,do <b>not</b> do NXDOMAIN Rewriting
+11,has_ta_19036,have KSK 9036,that,have root KSK 19036 (and root KSK sentinel support
+12,hasnt_ta_19036,do not have KSK 9036,that,do <b>not</b> have root KSK 19036 (but <b>do</b> have root KSK sentinel support)
+13,has_ta_20326,have . KSK 20326,that,have root KSK 20326 (and root KSK sentinel support)
+14,hasnt_ta_20326,do not have . KSK 20326,that,do <b>not</b> have root KSK 20326 (but <b>do</b> have root KSK sentinel support)
+15,can_rsamd5,RSA-MD5 secure,with,validate DNSKEY algorithm RSAMD5
+16,cannot_rsamd5,RSA-MD5 insecure,with,do <b>not</b> validate DNSKEY algorithm RSAMD5
+17,broken_rsamd5,RSA-MD5 failing,with,have broken DNSKEY algorithm RSAMD5 validation support
+18,can_dsa,DSA secure,with,validate DNSKEY algorithm DSA
+19,cannot_dsa,DSA insecure,with,do <b>not</b> validate DNSKEY algorithm DSA
+20,broken_dsa,DSA failing,with,have broken DNSKEY algorithm DSA validation support
+21,can_rsasha1,RSA-SHA1 secure,with,validate DNSKEY algorithm RSA-SHA1
+22,cannot_rsasha1,RSA-SHA1 insecure,with,do <b>not</b> validate DNSKEY algorithm RSA-SHA1
+23,broken_rsasha1,RSA-SHA1 failing,with,have broken DNSKEY algorithm RSA-SHA1 validation support
+24,can_dsansec3,DSA-NSEC3 secure,with,validates DNSKEY algorithm DSA-NSEC3
+25,cannot_dsansec3,DSA-NSEC3 insecure,with,do <b>not</b> validate DNSKEY algorithm DSA-NSEC3
+26,broken_dsansec3,DSA-NSEC3 failing,with,have broken DNSKEY algorithm DSA-NSEC3 validation support
+27,can_rsansec3,RSA-SHA1-NSEC3 secure,with,validate DNSKEY algorithm RSA-NSEC3
+28,cannot_rsansec3,RSA-SHA1-NSEC3 insecure,with,do <b>not</b> validate DNSKEY algorithm RSA-NSEC3
+29,broken_rsansec3,RSA-SHA1-NSEC3 failing,with,have broken DNSKEY algorithm RSA-NSEC3 validation support
+30,can_rsasha256,RSA-SHA256 secure,with,validate DNSKEY algorithm RSA-SHA256
+31,cannot_rsasha256,RSA-SHA256 insecure,with,do <b>not</b> validate DNSKEY algorithm RSA-SHA256
+32,broken_rsasha256,RSA-SHA256 failing,with,have broken DNSKEY algorithm RSA-SHA256 validation support
+33,can_rsasha512,RSA-SHA512 secure,with,validate DNSKEY algorithm RSA-SHA512
+34,cannot_rsasha512,RSA-SHA512 insecure,with,do <b>not</b> validate DNSKEY algorithm RSA-SHA512
+35,broken_rsasha512,RSA-SHA512 failing,with,have broken DNSKEY algorithm RSA-SHA512 validation support
+36,can_eccgost,ECC-GOST secure,with,validate DNSKEY algorithm ECC-GOST
+37,cannot_eccgost,ECC-GOST insecure,with,do <b>not</b> validate DNSKEY algorithm ECC-GOST
+38,broken_eccgost,ECC-GOST failing,with,have broken DNSKEY algorithm ECC-GOST validation support
+39,can_ecdsa256,ECDSA-P256-SHA256 secure,with,validate DNSKEY algorithm ECDSA256
+40,cannot_ecdsa256,ECDSA-P256-SHA256 insecure,with,do <b>not</b> validate DNSKEY algorithm ECDSA256
+41,broken_ecdsa256,ECDSA-P256-SHA256 failing,with,have broken DNSKEY algorithm ECDSA256 validation support
+42,can_ecdsa384,ECDSA-P384-SHA384 secure,with,validate DNSKEY algorithm ECDSA384
+43,cannot_ecdsa384,ECDSA-P384-SHA384 insecure,with,do <b>not</b> validate DNSKEY algorithm ECDSA384
+44,broken_ecdsa384,ECDSA-P384-SHA384 failing,with,have broken DNSKEY algorithm ECDSA384 validation support
+45,can_ed25519,ED25519 secure,with,validate DNSKEY algorithm ED25519
+46,cannot_ed25519,ED25519 insecure,with,do <b>not</b> validate DNSKEY algorithm ED25519
+47,broken_ed25519,ED25519 failing,with,have broken DNSKEY algorithm ED25519 validation support
+48,can_ed448,ED448 secure,with,validate DNSKEY algorithm ED448
+49,cannot_ed448,ED448 insecure,with,do <b>not</b> validate DNSKEY algorithm ED448
+50,broken_ed448,ED448 failing,with,have broken DNSKEY algorithm ED448 validation support
+51,can_gost,GOST DS secure,with,validate DS algorithm GOST
+52,cannot_gost,GOST DS insecure,with,do <b>not</b> validate DS algorithm GOST
+53,broken_gost,GOST DS failing,with,have broken DS algorithm GOST validation support
+54,can_sha384,SHA-384 DS secure,with,validate DS algorithm SHA384
+55,cannot_sha384,SHA-384 DS insecure,with,do <b>not</b> validate DS algorithm SHA384
+56,broken_sha384,SHA-384 DS failing,with,have broken DS algorithm SHA384 validation support
+57,is_internal,internal,with,have the same ASN as the probe (internal)
+58,is_forwarding,forwarding,with,are forwarding to a resolver with a different ASN (forwarding)
+59,is_external,external,with,have a ASN different from the probe ASN (external)
