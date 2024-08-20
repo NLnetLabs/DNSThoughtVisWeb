@@ -254,7 +254,7 @@ const copyContent = async () => {
 </script>
 
 <svelte:head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="https://use.typekit.net/cxt3dey.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
